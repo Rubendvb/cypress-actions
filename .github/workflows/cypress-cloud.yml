@@ -5,7 +5,7 @@ on:
     inputs:
       spec: 
         description: Run by cypress command line
-        default: cypress/2e2/*n
+        default: cypress/2e2/*
 
 jobs:
   cypress-electron-tests:
