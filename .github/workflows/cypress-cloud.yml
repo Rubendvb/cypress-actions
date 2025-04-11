@@ -21,7 +21,7 @@ jobs:
           browser: electron
           record: true
           group: UI Electron
-          spec: ${{ github.event.inputs.spec }}
+          spec: ${{ github.event.inputs.spec }
         env:
-          CYPRESS_RECORD_KEY: 7171a7bc-e37c-448a-a3a8-18401d989eea
+          CYPRESS_RECORD_KEY: ${{ secrets.CYPRESS_RECORD_KEY }}
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
