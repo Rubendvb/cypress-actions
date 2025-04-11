@@ -3,12 +3,12 @@ name: Cypress Cloud
 on:
   workflow_dispatch:
     inputs:
-      spec: 
+      spec:
         description: Run by cypress command line
         default: cypress/2e2/*
 
 jobs:
-  cypress-electron-tests:
+  cypress-e2e-electron:
     runs-on: ubuntu-latest
     steps:
       - name: Get code
