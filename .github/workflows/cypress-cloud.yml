@@ -12,10 +12,10 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Get code
-        uses: actions/checkout@v4.2.2
+        uses: actions/checkout@v4
 
       - name: Cypress run
-        uses: cypress-io/github-action@v6.5.0
+        uses: cypress-io/github-action@v6
         with:
           install-command: yarn install
           browser: electron
