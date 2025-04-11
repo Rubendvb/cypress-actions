@@ -15,9 +15,9 @@ jobs:
         uses: actions/checkout@v4
 
       - name: Cypress run
-        uses: cypress-io/github-action@v6
+        uses: cypress-io/github-action@v6.5.0
         with:
-          start: yarn install
+          install-command: yarn install
           browser: electron
           record: true
           group: UI Electron
